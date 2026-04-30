@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Word</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            scroll-behavior:smooth;
+        }
+        body{
+            background-color:#f5e6d3;
+            color:#3b2413;
+        }
+        header{
+            background-color:#4b2e1e;
+            color:white;
+            padding:20px;
+            text-align:center;
+            position:sticky;
+            top:0;
+        }
+        nav{
+            margin-top:10px;
+        }
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+        nav a:hover{
+            color:#f7c873;
+        }
+        section{
+            padding:70px 20px;
+        }
+        .inicio{
+            background-color:#6b3e26;
+            color:white;
+            text-align:center;
+            height:90vh;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
+        .logo-inicio{
+            width:280px;
+            margin-bottom:25px;
+            border-radius:20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        }  
+        .inicio h1{
+            font-size:55px;
+            margin-bottom:20px;
+        }
+        .inicio p{
+            font-size:20px;
+            width:70%;
+        }
+        .productos{
+            text-align:center;
+        }
+        .productos h2{
+            font-size:40px;
+            margin-bottom:40px;
+        }
+        .contenedor-productos{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:20px;
+        }
+        .producto{
+            background:white;
+            width:250px;
+            padding:20px;
+            border-radius:15px;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+            transition:0.3s;
+        }
+        .producto:hover{
+            transform:scale(1.05);
+        }
+        .producto img{
+            width:100%;
+            border-radius:10px;
+        }
+        .producto h3{
+            margin:15px 0;
+        }
+        .producto p{
+            color:#7a3e00;
+            font-size:20px;
+            font-weight:bold;
+        }
+        .Sobrenosotros{
+            background-color:#fff3e6;
+            text-align:center;
+        }
+        .Sobrenosotros h2{
+            font-size:40px;
+            margin-bottom:20px;
+        }
+        .Sobrenosotros p{
+            margin:15px auto;
+            width:80%;
+            line-height:1.6;
+        }
+        .servicios{
+            text-align:center;
+        }
+        .servicios h2{
+            font-size:40px;
+            margin-bottom:20px;
+        }
+        .servicios li{
+            list-style:none;
+            margin:15px;
+            font-size:20px;
+        }
+        .contacto{
+            background-color:#4b2e1e;
+            color:white;
+            text-align:center;
+        }
+        .contacto h2{
+            font-size:40px;
+            margin-bottom:20px;
+        }
+        .contacto p{
+            margin:10px;
+            font-size:18px;
+        }
+        footer{
+            background:black;
+            color:white;
+            text-align:center;
+            padding:15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CHOCOLATE WORD</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#sobrenosotros">Sobre Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    <!-- INICIO -->
+    <section class="inicio" id="inicio"> 
+    <img src="logo.png" alt="Logo Chocolate Word" class="logo-inicio"> 
+    <h1>Chocolate Artesanal Guatemalteco</h1> 
+    <p> 
+        Chocolate Word es una empresa guatemalteca dedicada a la producción 
+        de chocolates artesanales de alta calidad. 
+        Elaborados con cacao cultivado en Guatemala, 
+        ofrecemos productos únicos que destacan por su sabor, 
+        creatividad y la riqueza del cacao guatemalteco. 
+    </p> 
+</section> 
+    <!-- PRODUCTOS -->
+    <section class="productos" id="productos"> 
+    <h2>Nuestros Productos</h2> 
+    <div class="contenedor-productos"> 
+        <div class="producto"> 
+            <img src="clasica.png"> 
+            <h3>Barra Clásica Maya</h3> 
+            <p>Q25</p> 
+        </div> 
+        <div class="producto"> 
+            <img src="volcan.png"> 
+            <h3>Barra Volcán De Leche</h3> 
+            <p>Q22</p> 
+        </div> 
+        <div class="producto"> 
+            <img src="nube.png"> 
+            <h3>Barra Nube De Cacao</h3> 
+            <p>Q24</p> 
+        </div> 
+        <div class="producto"> 
+            <img src="tesoro.png"> 
+            <h3>Tesoro Tropical</h3> 
+            <p>Q8</p> 
+        </div> 
+        <div class="producto"> 
+            <img src="bombon.png"> 
+            <h3>Bombón Quetzal</h3> 
+            <p>Q7</p> 
+        </div> 
+        <div class="producto"> 
+            <img src="coleccion.png"> 
+            <h3>Colección Raíces De Guatemala</h3> 
+            <p>Q120</p> 
+        </div> 
+    </div> 
+</section> 
+    <!-- NOSOTROS -->
+    <section class="Sobrenosotros" id="Sobrenosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>
+        Somos una empresa guatemalteca dedicada a la producción 
+        y venta de chocolates artesanales de alta calidad. 
+        Nuestro objetivo es resaltar el sabor del cacao nacional
+        y ofrecer productos únicos 
+        que representen la cultura y tradición de Guatemala. 
+        Nuestra misión y visión son:
+        </p>
+        <h2>Misión</h2>
+        <p>
+            Elaborar productos de chocolate de alta calidad utilizando 
+            cacao guatemalteco,ofreciendo sabores únicos 
+            que satisfagan a nuestros clientes.Nos comprometemos 
+            a trabajar con responsabilidad, apoyando a los agricultores 
+            locales, cuidando el medio ambiente y brindando productos que 
+            generen bienestar y momentos de felicidad en las personas.
+        </p>
+        <h2>Visión</h2>
+        <p>
+            Ser una empresa reconocida a nivel nacional e internacional 
+            por la calidad de nuestros chocolates, la innovación 
+            en nuestros productos y nuestro compromiso con la 
+            sostenibilidad. Buscamos crecer de manera responsable, 
+            promoviendo el cacao guatemalteco y contribuyendo al
+            desarrollo económico de nuestras comunidades.
+        </p>
+    </section>
+    <!-- SERVICIOS -->
+    <section class="servicios" id="servicios"> 
+    <h2>Nuestros Servicios</h2> 
+    <div class="contenedor-productos"> 
+        <div class="producto"> 
+            <img src="eventos.png"> 
+            <h3>Elaboración de productos para eventos</h3> 
+        </div> 
+        <div class="producto"> 
+            <img src="distribucion.png"> 
+            <h3>Distribución a tiendas y supermercados</h3> 
+        </div> 
+        <div class="producto"> 
+            <img src="personalizados.png"> 
+            <h3>Pedidos personalizados</h3> 
+        </div> 
+        <div class="producto"> 
+            <img src="venta.png"> 
+            <h3>Venta al público</h3> 
+        </div> 
+    </div> 
+</section> 
+    <!-- CONTACTO -->
+    <section class="contacto" id="contacto">
+        <h2>Contáctanos</h2>
+        <p>📱 WhatsApp: 5765-0808</p>
+        <p>☎ Teléfono: 2543-9090</p>
+        <p>📘 Facebook: @ChocolateWordGT</p>
+        <p>📸 Instagram: @chocolateword.gt</p>
+    </section>
+    <footer>
+        <p>© 2026 Chocolate Word</p>
+    </footer>
+</body>
+</html>
